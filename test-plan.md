@@ -13,3 +13,17 @@ Test aşağıdakı funksiyaları əhatə edir:
 - URL dəyişimi
 
  ## Test Environment 
+ 
+| Parametr | Dəyər |
+|----------|--------|
+| Platform | Web |
+| Test Növü | Manual Functional Testing |
+| Browser | Google Chrome Version  |
+| Operating System | Windows |
+
+## Testlər manual şəkildə aparılmışdır:
+- Black Box Testing
+- Positive Testing
+- Negative Testing
+- URL Verification
+- İnput Validation
