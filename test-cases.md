@@ -1,53 +1,8 @@
-# 🏦 Kapital Bank – Filial Axtarışı Manual Test Cases
+# Kapital Bank – Filial Axtarışı Manual Test Cases
 
 ---
 
-# 📌 Test Məqsədi
-
-Bu sənəd Kapital Bank veb saytında filial, ATM, ödəniş terminalı və rəqəmsal mərkəz axtarış funksionallığının manual olaraq test edilməsi üçün hazırlanmışdır.
-
-Testin əsas məqsədi:
-
-- Şəhər filtrinin düzgün işləməsini yoxlamaq
-- Seçilən bölməyə uyğun URL dəyişimini yoxlamaq
-- Mövcud olmayan seçimlərdə sistem davranışını yoxlamaq
-- Axtarış inputunun validasiyasını test etmək
-  
----
-
-# 🧪 Testing Metodologiyası 
-
-### ✔ Test Növü:
-Manual Functional Testing
-
-### ✔ Test Dizayn Texnikaları:
-- Black Box Testing
-- Positive Testing
-- Negative Testing
-- URL Verification
-- UI Validation
-
-### ✔ Test İcrası:
-- Hər test case ayrıca icra edilmişdir
-- Addımlar ardıcıllıqla yerinə yetirilmişdir
-- Hər klikdən sonra URL dəyişimi yoxlanılmışdır
-- Siyahıda göstərilən nəticələr vizual olaraq yoxlanılmışdır
-- Şəhər seçimi zamanı filtr mexanizmi test edilmişdir
-- Mövcud olmayan seçimlərdə sistemin response davranışı analiz edilmişdir
----
-
-# 🛠 Test Environment 
-
-| Parametr | Dəyər |
-|----------|--------|
-| Platform | Web |
-| Test Növü | Manual Functional Testing |
-| Browser | Google Chrome Version  |
-| Operating System | Windows |
-
----
-
-# ✅ Pozitiv Test Cases
+# Pozitiv Test Cases
 
 | Test İD | Funksionallıq | Test Növü | Steps | Expected Result |
 |----------|--------------|------------|-------|----------------|
@@ -59,7 +14,7 @@ Manual Functional Testing
 
 ---
 
-# ❌ Neqativ Test Cases
+#  Neqativ Test Cases
 
 | Test İD | Funksionallıq | Test Növü | Steps | Expected Result |
 |----------|--------------|------------|-------|----------------|
@@ -68,12 +23,3 @@ Manual Functional Testing
 | TC_FA_03 | Birbank Private | Neqativ | 1.Kapital Bank saytına daxil ol<br>2.”Xidmət Şöbəsi” buttonuna klik et<br>3.”Birbank Private” bölməsinə daxil ol<br>4.Şəhər siyahısını aç | 1.Sayt açılır. https://www.kapitalbank.az<br>2. https://www.kapitalbank.az/locations<br>3. https://www.kapitalbank.az/locations/atm/all/private<br>4. Siyahıda yalnız Bakı şəhəri göstərilir, digər şəhərlər mövcud deyil və seçilə bilmir |
 | TC_FA_04 | Cash-in ATM | Neqativ | 1.Kapital Bank saytına daxil ol<br>2.”Xidmət Şöbəsi” buttonuna klik et<br>3.Cash-in bölməsinə daxil ol<br>4.Siyahıda mövcud olmayan şəhər Şəmkir axtar | 1.Sayt açılır. https://www.kapitalbank.az<br>2. https://www.kapitalbank.az/locations<br>3. https://www.kapitalbank.az/locations/atm/all/cash_in<br>4. Şəmkir şəhəri siyahıda göstərilmir və seçilə bilmir |
 | TC_FA_05 | Filial Axtarışı | Neqativ | 1.Kapital Bank saytına daxil ol<br>2.”Xidmət Şöbəsi” buttonuna klik et<br>3.Filial bölməsinə daxil ol<br>4.Axtarış sahəsinə xüsusi simvollar yaz<br>5.Axtarış buttonuna klik et | 1.Sayt açılır. https://www.kapitalbank.az<br>2. https://www.kapitalbank.az/locations<br>3. https://www.kapitalbank.az/locations/branch/all<br>4. @@##<br>5. Sistem nəticə göstərmir və səhv sistem xətası baş vermir |
-
----
-
-# 📊 Ümumi Nəticə
-
-- Pozitiv ssenarilərdə sistem düzgün URL-ə yönləndirir və filtr nəticələrini korrekt göstərir.
-- Neqativ ssenarilərdə sistem stabil qalır.
-- Gözlənilməz sistem xətası müşahidə olunmamışdır.
-- Filtr mexanizmi funksional olaraq düzgün işləyir.
