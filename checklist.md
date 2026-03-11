@@ -1,4 +1,4 @@
-# Checklist 
+# Checklist - Kapital Bank Filial axtarışı
 
 - [ ] Saytın açılması
 - [ ] Filial bölməsinin açılması
